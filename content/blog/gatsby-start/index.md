@@ -65,5 +65,6 @@ $ gatsby develop #ポート番号は-pオプションで指定可能。
 ## 主要参考URL
 https://www.gatsbyjs.org/tutorial/  
 https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog  
+https://github.com/gatsbyjs/gatsby-starter-blog  
 https://qiita.com/abouch/items/ab7694e64f011ee2b265  
 https://takumon.com/2018/09/10/
