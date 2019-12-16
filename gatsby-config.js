@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `石火埜の技術系blog`,
-    author: `石火埜`,
-    description: `石火埜の技術系blog`,
-    siteUrl: `https://sekikano.github.io/`,
+    title: `清隆TheBlackの技術系blog`,
+    author: `清隆TheBlack`,
+    description: `清隆TheBlackの技術系blog`,
+    siteUrl: `https://KiyotakaTheBlack.github.io/`,
   },
   plugins: [
     {
@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `石火埜の技術系blog`,
-        short_name: `石火埜blog`,
+        name: `清隆TheBlackの技術系blog`,
+        short_name: `清隆TheBlackのblog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
