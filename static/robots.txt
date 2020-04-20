@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap:https://kiyotakatheblack.github.io/sitemap
