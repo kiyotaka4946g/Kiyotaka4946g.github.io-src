@@ -1,3 +1,5 @@
+const config = require("./local/config.js");
+
 module.exports = {
   siteMetadata: {
     title: `清隆TheBlackの技術系blog`,
@@ -57,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `config.googleAnalyticsID`,
       },
     },
     `gatsby-plugin-feed`,
