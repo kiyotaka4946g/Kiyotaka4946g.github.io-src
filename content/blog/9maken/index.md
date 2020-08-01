@@ -1,7 +1,7 @@
 ---
 title: Github Pagesテスト中
 date: "2020-03-18T23:54:08.272Z"
-description: "テスト中"
+description: "Github Pagesをテスト中"
 ---
 
 ## Github Pagesをテスト中
