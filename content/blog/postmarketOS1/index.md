@@ -5,7 +5,7 @@ description: "postmarketOSのインストール"
 ---
 
 ## postmarketOSをまたインスコしてみた
-[前回](/postmaeketOS)に続きNexus7 2012 wifiにpostmarketOSをインスコしてみた。  
+[前回](/postmarketOS/)に続きNexus7 2012 wifiにpostmarketOSをインスコしてみた。  
 手順はほぼ同じ、今回はplasma-mobile-extraをお試し。  
 [公式wiki](https://wiki.postmarketos.org/wiki/Google_Nexus_7_2012_\(asus-grouper\))の650MBオーバーと同じく、[TWMP](https://twrp.me/)をインスコ後、`./pmbootstrap.py export`や`adb shell`等の手順となる。`df`のみではパーティションの確認が出来ず、`ls /dev/block/mmcblk0p*`を利用した。またマウントは最初からなかったのでadb shell内でのumountは不要だった。 `./pmbootstrap.py install`の途中で聞かれるユーザーパスワードは数字のみでないとタブレットの復帰が出来ないので注意。
   
