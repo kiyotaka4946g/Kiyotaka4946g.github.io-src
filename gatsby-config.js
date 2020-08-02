@@ -1,4 +1,4 @@
-const config = require("./local/config.js");
+const config = require("./local/config.js")
 
 module.exports = {
   siteMetadata: {
@@ -48,7 +48,7 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-         `gatsby-remark-prismjs`,
+          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -60,7 +60,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `config.googleAnalyticsID`,
-	head: true,
+        head: true,
       },
     },
     `gatsby-plugin-feed`,
@@ -86,5 +86,16 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
+    `gatsby-plugin-graphql-codegen`,
+    `gatsby-plugin-typescript`,
   ],
 }
