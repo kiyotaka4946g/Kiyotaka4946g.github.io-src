@@ -30,13 +30,15 @@ const Bio = () => {
   const { author } = data.site.siteMetadata
   return (
     <div
+      className="justify-center"
       style={{
-        display: `flex`,
+      display: `flex`,
       }}
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
+        className="justify-center"
         style={{
           marginBottom: 0,
           minWidth: 50,

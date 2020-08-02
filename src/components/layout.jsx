@@ -24,7 +24,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
+        <h2
           style={{
           }}
         >
@@ -35,7 +35,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+        </h2>
       )
     }
     return (
@@ -43,9 +43,10 @@ class Layout extends React.Component {
         style={{
         }}
       >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
+        <header className="w-5/6 text-center">{header}</header>
+        <main className="w-5/6 text-left">
+		{children}</main>
+        <footer className="w-5/6 text-center">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
