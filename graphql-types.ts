@@ -2543,7 +2543,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___legacy'
   | 'pluginCreator___pluginOptions___theme_color_in_head'
   | 'pluginCreator___pluginOptions___cacheDigest'
-  | 'pluginCreator___pluginOptions___pathToConfigModule'
   | 'pluginCreator___pluginOptions___postCssPlugins'
   | 'pluginCreator___pluginOptions___postCssPlugins___purge'
   | 'pluginCreator___pluginOptions___pathCheck'
@@ -2765,7 +2764,6 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___legacy'
   | 'pluginOptions___theme_color_in_head'
   | 'pluginOptions___cacheDigest'
-  | 'pluginOptions___pathToConfigModule'
   | 'pluginOptions___postCssPlugins'
   | 'pluginOptions___postCssPlugins___purge'
   | 'pluginOptions___pathCheck'
@@ -2902,7 +2900,6 @@ export type SitePluginPluginOptions = {
   legacy?: Maybe<Scalars['Boolean']>;
   theme_color_in_head?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
-  pathToConfigModule?: Maybe<Scalars['String']>;
   postCssPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPostCssPlugins>>>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
@@ -2929,7 +2926,6 @@ export type SitePluginPluginOptionsFilterInput = {
   legacy?: Maybe<BooleanQueryOperatorInput>;
   theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
-  pathToConfigModule?: Maybe<StringQueryOperatorInput>;
   postCssPlugins?: Maybe<SitePluginPluginOptionsPostCssPluginsFilterListInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
