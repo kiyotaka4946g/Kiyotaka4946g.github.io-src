@@ -38,7 +38,6 @@ const Bio = () => {
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
-        className="justify-center"
         style={{
           marginBottom: 0,
           minWidth: 50,
