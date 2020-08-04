@@ -43,10 +43,10 @@ class Layout extends React.Component {
         style={{
         }}
       >
-        <header className="w-5/6 text-center">{header}</header>
-        <main className="w-5/6 text-left">
+        <header className="text-center">{header}</header>
+        <main className="text-left">
 		{children}</main>
-        <footer className="w-5/6 text-center">
+        <footer className="text-center">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

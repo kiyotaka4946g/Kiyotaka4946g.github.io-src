@@ -37,9 +37,6 @@ class BlogPostTemplate extends React.Component {
             style={{
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
         <nav>
@@ -68,6 +65,9 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
+        <footer>
+          <Bio />
+        </footer>
       </Layout>
     )
   }
