@@ -17,8 +17,8 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article className="prose">
-          <header>
+        <article className="prose max-w-none w-5/6">
+          <header text-center>
             <h1
               style={{
               }}
@@ -32,7 +32,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <section className="text-indent-1" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section className="text-indent-1 text-left" dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
             }}

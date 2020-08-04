@@ -44,7 +44,7 @@ class Layout extends React.Component {
         }}
       >
         <header className="text-center">{header}</header>
-        <main className="text-left">
+        <main className="w-screen text-center flex flex-col items-center">
 		{children}</main>
         <footer className="text-center">
           © {new Date().getFullYear()}, Built with
