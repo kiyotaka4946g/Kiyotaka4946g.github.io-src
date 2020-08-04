@@ -5,6 +5,9 @@ module.exports = {
       default: {
         css: {
           color: '#fff',
+          h1: {color: '#fff',},
+          h2: {color: '#fff',},
+          h3: {color: '#fff',},
           a: {
             color: '#3182ce',
             '&:hover': {
