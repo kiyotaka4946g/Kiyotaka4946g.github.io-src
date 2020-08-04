@@ -2972,14 +2972,68 @@ export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
 
 export type SitePluginPluginOptionsPostCssPlugins = {
   purge?: Maybe<Array<Maybe<Scalars['String']>>>;
+  theme?: Maybe<SitePluginPluginOptionsPostCssPluginsTheme>;
 };
 
 export type SitePluginPluginOptionsPostCssPluginsFilterInput = {
   purge?: Maybe<StringQueryOperatorInput>;
+  theme?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeFilterInput>;
 };
 
 export type SitePluginPluginOptionsPostCssPluginsFilterListInput = {
   elemMatch?: Maybe<SitePluginPluginOptionsPostCssPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsTheme = {
+  typography?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypography>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeFilterInput = {
+  typography?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypography = {
+  default?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefault>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefault = {
+  css?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCss>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCss = {
+  color?: Maybe<Scalars['String']>;
+  a?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA = {
+  color?: Maybe<Scalars['String']>;
+  _xhover?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA_Xhover>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA_Xhover = {
+  color?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA_XhoverFilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssAFilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
+  _xhover?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA_XhoverFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssFilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
+  a?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssAFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultFilterInput = {
+  css?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyFilterInput = {
+  default?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultFilterInput>;
 };
 
 export type SitePluginSortInput = {
