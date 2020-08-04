@@ -2543,9 +2543,9 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___legacy'
   | 'pluginCreator___pluginOptions___theme_color_in_head'
   | 'pluginCreator___pluginOptions___cacheDigest'
+  | 'pluginCreator___pluginOptions___pathCheck'
   | 'pluginCreator___pluginOptions___postCssPlugins'
   | 'pluginCreator___pluginOptions___postCssPlugins___purge'
-  | 'pluginCreator___pluginOptions___pathCheck'
   | 'pluginCreator___nodeAPIs'
   | 'pluginCreator___browserAPIs'
   | 'pluginCreator___ssrAPIs'
@@ -2764,9 +2764,9 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___legacy'
   | 'pluginOptions___theme_color_in_head'
   | 'pluginOptions___cacheDigest'
+  | 'pluginOptions___pathCheck'
   | 'pluginOptions___postCssPlugins'
   | 'pluginOptions___postCssPlugins___purge'
-  | 'pluginOptions___pathCheck'
   | 'nodeAPIs'
   | 'browserAPIs'
   | 'ssrAPIs'
@@ -2900,8 +2900,8 @@ export type SitePluginPluginOptions = {
   legacy?: Maybe<Scalars['Boolean']>;
   theme_color_in_head?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
-  postCssPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPostCssPlugins>>>;
   pathCheck?: Maybe<Scalars['Boolean']>;
+  postCssPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPostCssPlugins>>>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
@@ -2926,8 +2926,8 @@ export type SitePluginPluginOptionsFilterInput = {
   legacy?: Maybe<BooleanQueryOperatorInput>;
   theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
-  postCssPlugins?: Maybe<SitePluginPluginOptionsPostCssPluginsFilterListInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+  postCssPlugins?: Maybe<SitePluginPluginOptionsPostCssPluginsFilterListInput>;
 };
 
 export type SitePluginPluginOptionsPlugins = {
@@ -3002,6 +3002,9 @@ export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefault = {
 
 export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCss = {
   color?: Maybe<Scalars['String']>;
+  h1?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH1>;
+  h2?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH2>;
+  h3?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH3>;
   a?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssA>;
 };
 
@@ -3025,7 +3028,34 @@ export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssAFilte
 
 export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssFilterInput = {
   color?: Maybe<StringQueryOperatorInput>;
+  h1?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH1FilterInput>;
+  h2?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH2FilterInput>;
+  h3?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH3FilterInput>;
   a?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssAFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH1 = {
+  color?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH1FilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH2 = {
+  color?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH2FilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH3 = {
+  color?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultCssH3FilterInput = {
+  color?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPostCssPluginsThemeTypographyDefaultFilterInput = {
