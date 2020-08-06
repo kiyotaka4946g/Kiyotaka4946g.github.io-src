@@ -2985,11 +2985,25 @@ export type SitePluginPluginOptionsPostCssPluginsFilterListInput = {
 };
 
 export type SitePluginPluginOptionsPostCssPluginsTheme = {
+  fontFamily?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeFontFamily>;
   typography?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypography>;
 };
 
 export type SitePluginPluginOptionsPostCssPluginsThemeFilterInput = {
+  fontFamily?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeFontFamilyFilterInput>;
   typography?: Maybe<SitePluginPluginOptionsPostCssPluginsThemeTypographyFilterInput>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeFontFamily = {
+  sans?: Maybe<Array<Maybe<Scalars['String']>>>;
+  serif?: Maybe<Array<Maybe<Scalars['String']>>>;
+  mono?: Maybe<Array<Maybe<Scalars['String']>>>;
+};
+
+export type SitePluginPluginOptionsPostCssPluginsThemeFontFamilyFilterInput = {
+  sans?: Maybe<StringQueryOperatorInput>;
+  serif?: Maybe<StringQueryOperatorInput>;
+  mono?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPostCssPluginsThemeTypography = {

@@ -11,6 +11,8 @@ h3 {
 a {
   @apply text-blue-600 underline;
 }
+@import "~fontsource-m-plus-1p/index.css";
+
 @tailwind components;
 @tailwind utilities;
 

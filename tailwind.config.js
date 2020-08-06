@@ -1,6 +1,11 @@
 module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
+    fontFamily: {
+      'sans': ['"M PLUS 1p"'],
+      'serif': ['"M PLUS 1p"'],
+      'mono': ['"M PLUS 1p"'],
+    },
     typography: {
       default: {
         css: {
